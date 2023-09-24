@@ -19,6 +19,7 @@ Feature:Register Functionality
 
   Scenario: User enters address details
     Given  User selects country
+    And User enters the United Kingdom
     And User enters address "15 Cooden Avenue"
     And User enters city "Leicester"
     And User enters postal code "LE3 0JS"

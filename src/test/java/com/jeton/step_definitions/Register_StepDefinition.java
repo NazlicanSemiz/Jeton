@@ -108,33 +108,41 @@ public class Register_StepDefinition {
 
     @Given("User selects country")
     public void user_selects_country() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+       registerPage.countrySelect.click();
+
+
     }
+
+    @And("User enters the United Kingdom")
+    public void userEntersTheUnitedKingdom() {
+        registerPage.unitedKingdom.click();
+    }
+
     @Given("User enters address {string}")
     public void user_enters_address(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        registerPage.address.click();
+       registerPage.address.sendKeys(string);
     }
     @Given("User enters city {string}")
     public void user_enters_city(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        registerPage.city.click();
+        registerPage.city.sendKeys(string);
     }
     @Given("User enters postal code {string}")
     public void user_enters_postal_code(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+       registerPage.postalCode.click();
+       registerPage.postalCode.sendKeys(string);
     }
     @Given("User selects I agree the terms&conditions and privacy policy")
     public void user_selects_i_agree_the_terms_conditions_and_privacy_policy() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        registerPage.agreeBtn.click();
+
     }
     @Given("User clicks go to wallet button")
     public void user_clicks_go_to_wallet_button() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        registerPage.goToWallet.click();
     }
+
+
 
 }
