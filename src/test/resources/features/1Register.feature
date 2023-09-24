@@ -4,8 +4,8 @@ Feature:Register Functionality
 
   Scenario: User should be able to register
     Given user is on the Sandbox Jeton web page
-    Then user should see title is Sandbox Jeton
-    When User clıcks Sign Up For Free button
+    Then user should see title is Global E-Wallet - Money Transfer & Money Exchange | Jeton
+    When User clicks Sign Up For Free button
     And User clicks Country Code button
     And User enters country code "+43"
     And User enters phone number "6641232281"
@@ -19,7 +19,6 @@ Feature:Register Functionality
 
   Scenario: User enters address details
     Given  User selects country
-    And User enters the United Kingdom
     And User enters address "15 Cooden Avenue"
     And User enters city "Leicester"
     And User enters postal code "LE3 0JS"

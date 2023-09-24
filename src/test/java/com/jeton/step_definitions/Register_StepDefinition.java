@@ -29,20 +29,23 @@ public class Register_StepDefinition {
         BrowserUtils.sleep(20);
     }
 
-    @Then("user should see title is Sandbox Jeton")
-    public void user_should_see_title_is_sandbox_jeton() {
-       // wait.until(ExpectedConditions.elementToBeClickable(registerPage.signUpForFree));
+    @Then("user should see title is Global E-Wallet - Money Transfer & Money Exchange | Jeton")
+    public void userShouldSeeTitleIsGlobalEWalletMoneyTransferMoneyExchangeJeton() {
+        // wait.until(ExpectedConditions.elementToBeClickable(registerPage.signUpForFree));
         String title = driver.getTitle();
         System.out.println(title);
         Assert.assertEquals(title, driver.getTitle());
         // System.out.println(Driver.getDriver().getTitle());
         // BrowserUtils.verifyTitle(Driver.getDriver(),"");
+
     }
 
-    @When("User clıcks Sign Up For Free button")
-    public void user_clıcks_sign_up_for_free_button() {
+
+    @When("User clicks Sign Up For Free button")
+    public void userClicksSignUpForFreeButton() {
         registerPage.signUpForFree.click();
     }
+
 
     @And("User clicks Country Code button")
     public void userClicksCountryCodeButton() {
@@ -142,7 +145,6 @@ public class Register_StepDefinition {
     public void user_clicks_go_to_wallet_button() {
         registerPage.goToWallet.click();
     }
-
 
 
 }
